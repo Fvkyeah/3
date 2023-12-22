@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Market Sans", Arial, sans-serif;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    margin-top: 6px;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+    list-style: none;
+    text: aria-label;
+}
+
+a {
+    text-decoration: none;
+    color: #0654ba;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.heading {
+
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 36px;
+    letter-spacing: normal;
+    text-align: left;
+    padding-bottom: 8px;
+    color: #151e27;
+
+}
+
+.h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0.67em;
+    margin-inline-end: 0.67em;
+}
+
+.signin-intro {
+
+    display: flex;
+    -webkit-box-orient: vertical;
+
+
+    flex-direction: column;
+    -webkit-box-align: center;
+
+    align-items: center;
+    max-width: 355px;
+}
+
+.sub-heading {
+    font-size: 14px;
+    max-width: 340px;
+
+
+}
+
+.textbox {
+    color: #111820;
+    font-size: .875rem;
+    position: relative;
+}
+
+.font-marketsans body {
+    font-family: "Market Sans", Arial, sans-serif;
+}
+
+#signin-form {
+    margin-top: 40px;
+    
+    padding-bottom: 8px;
+
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-size: small;
+    margin-top: 0;
+}
+
+.center {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+
+    border-radius: 10px;
+    text-align: center;
+}
+
+.center h1 {
+    text-align: center;
+}
+
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 0.2px solid #000000;
+
+    margin: 11px 0;
+}
+
+span {
+    text-align: center;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 0.2px;
+    background: #0044cc;
+    transition: .3s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    font-size: 11px;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+    width: 100%;
+
+}
+
+button.btn--large,
+a.fake-btn--large {
+    font-size: 1rem;
+    padding-bottom: 13px;
+    padding-top: 15px;
+}
+
+button.btn--primary,
+a.fake-btn--primary {
+    font-weight: bold;
+}
+
+button.btn--large,
+a.fake-btn--large {
+    min-height: 48px;
+}
+
+button.btn--primary,
+a.fake-btn--primary {
+    background-color: var(--button-primary-background-color, #3665f3);
+    color: var(--button-primary-foreground-color, #fff);
+}
+
+button.btn--fluid,
+a.fake-btn--fluid {
+    width: 100%;
+}
+
+button.btn,
+a.fake-btn {
+    border: 1px solid;
+    box-sizing: border-box;
+    font-family: inherit;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: bottom;
+    border-radius: var(--button-border-radius, 0);
+    display: inline-block;
+    max-width: 100%;
+    padding: 9.5px 16px;
+}
+
+.social-signin-wrapper {
+    margin-top: 24px;
+}
+
+div {
+    display: block;
+}
+
+.font-marketsans body {
+    font-family: "Market Sans", Arial, sans-serif;
+}
+
+.separator {
+    display: block;
+    width: 83%;
+    height: 30px;
+    padding: 1px 0;
+    margin-left: 38px;
+}
+
+.separator-line.animate {
+
+    animation: fade-in 1s;
+}
+
+.separator-line {
+    width: 100%;
+    height: 1px;
+    margin: 16px 0 0;
+    background-color: #c7c7c7;
+}
+
+.separator-content.animate {
+
+    animation: 1s slide-from-left;
+}
+
+.separator-content.animate mark {
+
+    animation: 1s appear;
+}
+
+.separator-content mark {
+    background-color: #FFF;
+    padding: 0 4px;
+}
+
+mark {
+
+    color: black;
+}
+
+.separator-content {
+    position: relative;
+    top: -9px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+0% {
+    left: -25%;
+    color: transparent;
+}
+
+100% {
+    left: 0;
+    color: #151e27;
+}
+
+.social-signin-buttons-reg {
+    margin-top: 24px;
+}
+
+.social-signin-buttons-reg div {
+    margin-bottom: 16px;
+}
+
+button.btn--primary.scl-btn--f {
+    background-color: #4267b2;
+    border: #4267b2;
+
+}
+
+button.btn--large,
+a.fake-btn--large {
+    font-size: 1rem;
+    padding-bottom: 13px;
+    padding-top: 15px;
+
+}
+
+button.btn--primary,
+a.fake-btn--primary {
+    font-weight: bold;
+
+}
+
+button.btn--large,
+a.fake-btn--large {
+    min-height: 48px;
+
+}
+
+button.btn--primary,
+a.fake-btn--primary {
+
+    border-color: var(--button-primary-border-color, #3665f3);
+
+    color: var(--button-primary-foreground-color, #fff);
+
+}
+
+button.btn--fluid,
+a.fake-btn--fluid {
+    width: 82%;
+
+}
+
+button.btn,
+a.fake-btn {
+
+    box-sizing: border-box;
+    font-family: inherit;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: bottom;
+
+    border-radius: var(--button-border-radius, 0);
+
+    display: inline-block;
+
+    max-width: 100%;
+
+    padding: 9.5px 16px;
+
+}
+
+.scl-btn--f {
+    position: relative;
+    background: url("image/fb.png") 7px 9px no-repeat;
+
+
+}
+
+.scl-btn--f:before {}
+
+scl-btn--f:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 34px;
+    height: 90%;
+}
+#signin-continue-btn{
+    width: 99%;
+}
+#signin_ggl_btn, #signin_splash_ggl_btn {
+    border: thin solid #888;
+    background-color: #fff;
+    color: #444;
+    padding-right: 30px;
+    line-height: inherit;
+    padding-left: 34px;
+}
+button.btn--large, a.fake-btn--large {
+    font-size: 1rem;
+    padding-bottom: 13px;
+    padding-top: 15px;
+}
+.scl-btn--g {
+    position: relative;
+    background: url("image/google.png") 10px 12px no-repeat;
+    background-size: 6%;
+}
+.scl-btn--g:before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    width: 20px;
+    height: 20px;
+}
+button.btn--primary.scl-btn--a {
+    border-color: #444;
+    background-color: #fff;
+    color: #444;
+}
+button.btn--large, a.fake-btn--large {
+    font-size: 1rem;
+    padding-bottom: 13px;
+    padding-top: 15px;
+}
+button.btn--large, a.fake-btn--large {
+    min-height: 48px;
+}
+button.btn--primary, a.fake-btn--primary {
+    font-weight: bold;
+}
+
+.scl-btn--a{
+      position: relative;
+    background: url("image/apple.png") 10px 12px no-repeat;
+    background-size: 6%;  
+}
+.roaming-auth {
+    text-align: center;
+}
+.kmsi-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 16px;
+}
+input[type="hidden" i] {
+    display: none;
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    padding: initial;
+    border: initial;
+}
+.font-marketsans body {
+    font-family: "Market Sans", Arial, sans-serif;
+}
+.checkbox-label {
+    margin-bottom: 6px;
+}
+.kmsi-container .checkbox__icon {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-right: 8px;
+    color: #006bff;
+}
+
+
+footer {
+    display: block;
+}
+.gf-t td {
+    padding: 1px 0;
+}
+#gf-norton {
+    background: url(image/Norton.png) no-repeat 0 0;
+    background-size: 80px;
+    width: 80px;
+    height: 50px;
+    border: 0;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+}
+#glbfooter a {
+    display: inline-block;
+    font-size: 12px;
+}
+a:active, a:link {
+    color: #0654ba;
+    text-decoration: underline;
+}
+#glbfooter {
+    margin: 0;
+    text-align: center;
+    padding: 650px 10px 20px 10px;
+ }
+#glbfooter {
+    background: #FFF;
+    border-top: 1px solid #CCC;
+    margin: 530px 0 0;
+    padding: 10px 10px 0px 5px;
+}
+.gh-ar-hdn {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.gf-t {
+    width: 100%;
+    margin-top: 20px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr[Attributes Style] {
+    vertical-align: top;
+}
+.gf-t td {
+    padding: 1px 0;
+}
+.gf-t td {
+    display: block;
+}
+.gf-legal, .gf-legal a, .coreFooterLegalNotice, .coreFooterLegalNotice a {
+    font-size: 11px !important;
+}
+.gf-legal {
+    -webkit-text-size-adjust: 100%;
+    color: #41413f;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.kmsi-container a {
+    margin-left: 2px;
+    text-decoration: underline;
+}
+.gf-legal a {
+    text-decoration: underline !important;
+    color: #727272 !important;
+}
+.accordion-head {
+    margin: 8px 0;
+    padding: 8px 0;
+}
+div {
+    display: block;
+}
+.need-help {
+    text-align: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+.need-help a {
+    color: #3665f3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.accordion-head .icon--chevron-down, .accordion-head .icon--chevron-up {
+    padding-left: 8px;
+    padding-bottom: 3px;
+    color: #0654ba;
+    height: 10px;
+    width: 10px;
+}
+svg.icon {
+    display: inline-block;
+    fill: currentColor;
+    pointer-events: none;
+    stroke: currentColor;
+    stroke-width: 0;
+    vertical-align: middle;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.need-help a {
+    
+    text-decoration: underline;
+    cursor: pointer;
+}
+.need-help {
+    text-align: center;
+
+}
+.need-help a {
+    color: #3665f3;
+    text-decoration: underline;
+    cursor: pointer;
+}
